@@ -2,6 +2,7 @@ function [Lambda, cal] = dissFactorCalc(RPM_wheel_bo_RPM_pedal,vel_lin_bo_RPM,bi
 
     %[~,~,~,~,~,m,~,radius,ID] = readCond(IdRun);
     [~,~,dist,vel_lin,power] = readRace(ID);
+    % [~,vel_lin,power,dist,~,~] = readRaceCer(ID);
     
     % Variables pre-allocation
     L = size(RPM_wheel_bo_RPM_pedal,1)-1;
